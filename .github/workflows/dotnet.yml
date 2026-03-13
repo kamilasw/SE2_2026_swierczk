@@ -21,11 +21,11 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      working-directory: TDDCodeData
+      working-directory: TDDCodeKata
       run: dotnet restore
     - name: Build
-      working-directory: TDDCodeData
+      working-directory: TDDCodeKata
       run: dotnet build --no-restore
     - name: Test
-      working-directory: TDDCodeData
+      working-directory: TDDCodeKata
       run: dotnet test --no-build --verbosity normal
